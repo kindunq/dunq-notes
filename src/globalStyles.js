@@ -1,6 +1,6 @@
-import { injectGlobal } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
     :root {
         --greyColor: #A2A19E;
         --blackColor: #373630;
@@ -55,3 +55,5 @@ injectGlobal`
         }
     }
 `;
+
+export default GlobalStyle;
